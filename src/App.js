@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import './App.css';
 import Selector from './components/selector.js'
 import Trivia from './components/trivia.js'
 
@@ -22,7 +23,7 @@ class App extends Component {
     .catch(console.log(`error fetching`))
     console.log(`fetching`,this.state.year,this.state.trivia)
   }
-  
+
   componentDidMount=()=>{
     this.fetching(this.state.year)    
   }
@@ -45,8 +46,7 @@ class App extends Component {
   render(){
     
     return (
-      <div className="tc f2 lh-copy georgia bg-light-bluenpm "> 
-        
+      <div className="tc bg ">        
         <Selector input={this.numberCath}/>
         <Trivia data={this.state}/>
       </div>
