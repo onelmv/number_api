@@ -4,19 +4,20 @@ const Selector =({input})=>{
 
   
     return (
-        <div >
+        <div className="pt5 ">
             <form >
-                <input  id="year" 
+                <input className="shadow-4"
+                        id="year" 
                         type="number" 
                         required 
                         maxLength='4' 
-                        size='10' 
+                        size='4' 
                         max='2020' 
                         min="-2000" 
-                        placeholder="Year"
+                        placeholder="year"
                         onChange={input}
                 />
-                <input type="submit" value="submit"/>
+                {/* <input type="submit" value="submit"/> */}
             </form>
         </div>
     );
